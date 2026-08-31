@@ -1,1 +1,51 @@
+function setup() {
+  createCanvas(400, 400);
+}
 
+function draw() {
+  background(25, 35, 45);
+
+  rectMode(CENTER);
+  ellipseMode(CENTER);
+
+  stroke(46, 204, 113);
+  strokeWeight(3);
+  line(200, 110, 200, 75);
+  line(200, 75, 215, 65);
+  
+  stroke(30, 132, 73);
+  strokeWeight(4);
+  line(130, 250, 95, 290);
+  line(270, 250, 305, 290);
+  
+  noStroke();
+
+  fill(46, 204, 113);
+  circle(215, 65, 12);
+
+  fill(46, 204, 113);
+  rect(200, 140, 120, 80, 15);
+
+  fill(15, 30, 20);
+  rect(200, 135, 90, 35, 8);
+  
+  fill(235, 247, 240);
+  circle(180, 135, 16);
+  circle(220, 135, 16);
+
+  fill(27, 94, 32);
+  rect(200, 185, 30, 10);
+
+  fill(30, 132, 73);
+  rect(200, 270, 140, 160, 20);
+
+  fill(200, 230, 201);
+  rect(200, 265, 90, 80, 5);
+
+  fill(46, 204, 113);
+  circle(200, 265, 35);
+
+  fill(39, 174, 96);
+  triangle(95, 290, 80, 315, 110, 315);
+  triangle(305, 290, 290, 315, 320, 315);
+}
