@@ -1,0 +1,430 @@
+function setup() {
+  createCanvas(500, 670);
+}
+
+function draw() {
+  background(52, 139, 165);
+
+  rectMode(CENTER);
+  ellipseMode(CENTER);
+
+  noStroke();
+
+  // LINEAS DEL FONDO
+  
+  stroke(38, 113, 143);
+  strokeWeight(3);
+
+  line(20, 40, 130, 20);
+  line(90, 110, 200, 85);
+  line(180, 30, 290, 50);
+  line(300, 100, 410, 75);
+  line(390, 30, 490, 55);
+
+  line(20, 180, 110, 165);
+  line(120, 210, 220, 185);
+  line(280, 190, 380, 215);
+  line(400, 150, 490, 175);
+
+  line(30, 300, 130, 280);
+  line(170, 310, 250, 290);
+  line(300, 300, 390, 320);
+  line(410, 280, 490, 300);
+
+  // Recuerda que aquí pusiste otra tonalidad para las lineas del fondo
+  stroke(74, 165, 181);
+  strokeWeight(4);
+
+  line(25, 80, 80, 65);
+  line(145, 120, 190, 100);
+  line(250, 90, 310, 70);
+  line(340, 130, 400, 105);
+  line(425, 95, 475, 75);
+
+  line(35, 220, 95, 205);
+  line(145, 240, 210, 220);
+  line(280, 235, 340, 220);
+  line(390, 250, 470, 230);
+
+  noStroke();
+
+  // MESA
+
+  // Color de la mesa o el suelo
+  fill(116, 88, 64);
+  rect(250, 625, 500, 90);
+
+  // Otras partes de la mesa con diferentes colores
+  fill(91, 72, 54);
+  rect(65, 612, 100, 35);
+  rect(170, 635, 130, 30);
+  rect(390, 620, 140, 35);
+
+  fill(139, 103, 69);
+  rect(105, 650, 110, 25);
+  rect(280, 610, 120, 25);
+  rect(450, 650, 100, 25);
+
+  // Lineas para que la mesa no se vea de un solo color
+  stroke(76, 65, 55);
+  strokeWeight(3);
+
+  line(0, 605, 100, 620);
+  line(70, 640, 180, 625);
+  line(180, 655, 290, 635);
+  line(300, 620, 400, 645);
+  line(390, 605, 500, 625);
+
+  line(20, 650, 90, 660);
+  line(240, 640, 330, 655);
+  line(410, 650, 490, 635);
+
+  // TALLOS DE LAS FLORES
+
+  // Aqui estan las lineas que conectan las flores con el jarron
+  stroke(45, 105, 68);
+  strokeWeight(4);
+
+  line(230, 490, 165, 220);
+  line(245, 490, 225, 245);
+  line(260, 490, 320, 250);
+  line(275, 490, 405, 300);
+  line(225, 490, 140, 290);
+
+  // Tallos de las flores azules y blancas
+  line(250, 490, 197, 286);
+  line(265, 490, 262, 310);
+  line(280, 490, 338, 330);
+  line(230, 500, 167, 355);
+  line(285, 500, 387, 375);
+
+  line(245, 500, 240, 390);
+  line(270, 500, 302, 395);
+  line(220, 505, 212, 437);
+  line(290, 505, 290, 455);
+
+  // Tallos de las flores rojas
+  line(215, 490, 155, 175);
+  line(250, 490, 250, 155);
+  line(275, 490, 345, 185);
+  line(290, 490, 410, 245);
+  line(210, 490, 100, 265);
+
+  // JARRON
+
+  noStroke();
+
+  // Parte de arriba del jarron
+  fill(88, 161, 195);
+  ellipse(250, 515, 125, 55);
+
+  // Parte superior del cuerpo
+  fill(102, 174, 201);
+  ellipse(250, 485, 105, 115);
+
+  // Cuerpo del jarron
+  fill(125, 190, 212);
+  rect(250, 545, 95, 115, 28);
+
+  // Otra parte para darle un poco más de forma
+  fill(105, 173, 198);
+  rect(250, 560, 82, 100, 25);
+
+  // Borde de arriba
+  fill(139, 198, 215);
+  ellipse(250, 510, 78, 35);
+
+  // Parte de abajo
+  fill(86, 148, 177);
+  ellipse(250, 615, 100, 28);
+
+  // Detallitos del jarron
+  stroke(77, 133, 164);
+  strokeWeight(3);
+
+  line(225, 495, 235, 600);
+  line(245, 495, 250, 615);
+  line(265, 495, 260, 595);
+  line(285, 500, 275, 585);
+
+  // TALLOS DE LAS FLORES DE ABAJO
+
+  // Estos son los tallos de las flores que estan mas abajo
+  stroke(45, 105, 68);
+  strokeWeight(4);
+
+  line(145, 545, 235, 510);
+  line(365, 535, 275, 510);
+  line(235, 520, 245, 510);
+  line(293, 535, 265, 510);
+
+  noStroke();
+
+  // FLORES BLANCAS DE ARRIBA
+
+  // Primera flor blanca
+  fill(230, 226, 196);
+
+  ellipse(145, 235, 32, 50);
+  ellipse(165, 220, 32, 50);
+  ellipse(185, 235, 32, 50);
+  ellipse(165, 250, 32, 50);
+
+  // Centro de la flor
+  fill(224, 198, 109);
+  ellipse(165, 235, 16, 16);
+
+  // Segunda flor blanca
+  fill(239, 233, 201);
+
+  ellipse(205, 260, 34, 52);
+  ellipse(225, 245, 34, 52);
+  ellipse(245, 260, 34, 52);
+  ellipse(225, 275, 34, 52);
+
+  fill(224, 198, 109);
+  ellipse(225, 260, 17, 17);
+
+  // Tercera flor blanca
+  fill(233, 231, 201);
+
+  ellipse(300, 265, 35, 55);
+  ellipse(320, 250, 35, 55);
+  ellipse(340, 265, 35, 55);
+  ellipse(320, 280, 35, 55);
+
+  fill(229, 188, 82);
+  ellipse(320, 265, 17, 17);
+
+  // Flor blanca del lado izquierdo debajo
+  fill(231, 229, 201);
+
+  ellipse(120, 305, 30, 46);
+  ellipse(140, 290, 30, 46);
+  ellipse(160, 305, 30, 46);
+  ellipse(140, 320, 30, 46);
+
+  fill(221, 180, 71);
+  ellipse(140, 305, 15, 15);
+
+  // Flor blanca del lado derecho
+  fill(240, 238, 210);
+
+  ellipse(385, 315, 32, 50);
+  ellipse(405, 300, 32, 50);
+  ellipse(425, 315, 32, 50);
+  ellipse(405, 330, 32, 50);
+
+  fill(223, 184, 74);
+  ellipse(405, 315, 16, 16);
+
+  // FLORES AZULES DE LA PARTE MEDIA
+
+  fill(57, 132, 183);
+
+  ellipse(180, 300, 24, 42);
+  ellipse(197, 286, 24, 42);
+  ellipse(214, 300, 24, 42);
+  ellipse(197, 316, 24, 42);
+
+  fill(219, 193, 90);
+  ellipse(197, 301, 12, 12);
+
+  // Segunda flor azul
+  fill(49, 119, 174);
+
+  ellipse(245, 325, 25, 44);
+  ellipse(262, 310, 25, 44);
+  ellipse(279, 325, 25, 44);
+  ellipse(262, 340, 25, 44);
+
+  fill(225, 188, 79);
+  ellipse(262, 325, 12, 12);
+
+  // Tercera flor azul
+  fill(61, 135, 186);
+
+  ellipse(320, 345, 26, 46);
+  ellipse(338, 330, 26, 46);
+  ellipse(356, 345, 26, 46);
+  ellipse(338, 360, 26, 46);
+
+  fill(222, 188, 73);
+  ellipse(338, 345, 12, 12);
+
+  // Cuarta flor azul
+  fill(52, 126, 180);
+
+  ellipse(150, 370, 25, 45);
+  ellipse(167, 355, 25, 45);
+  ellipse(184, 370, 25, 45);
+  ellipse(167, 385, 25, 45);
+
+  fill(224, 187, 72);
+  ellipse(167, 370, 12, 12);
+
+  // Quinta flor azul
+  fill(55, 129, 181);
+
+  ellipse(370, 390, 25, 45);
+  ellipse(387, 375, 25, 45);
+  ellipse(404, 390, 25, 45);
+  ellipse(387, 405, 25, 45);
+
+  fill(224, 187, 72);
+  ellipse(387, 390, 12, 12);
+
+  // FLORES ROJAS
+
+  // Primera flor roja
+  fill(198, 42, 25);
+
+  ellipse(155, 175, 55, 70);
+  ellipse(140, 190, 50, 65);
+  ellipse(175, 190, 50, 65);
+
+  fill(218, 51, 25);
+  ellipse(160, 190, 45, 55);
+
+  // Segunda flor roja
+  fill(191, 39, 23);
+
+  ellipse(250, 155, 60, 72);
+  ellipse(230, 170, 55, 70);
+  ellipse(270, 170, 55, 70);
+
+  fill(222, 56, 29);
+  ellipse(250, 175, 48, 58);
+
+  // Tercera flor roja
+  fill(195, 43, 24);
+
+  ellipse(345, 185, 58, 72);
+  ellipse(325, 200, 52, 68);
+  ellipse(365, 200, 52, 68);
+
+  fill(224, 55, 28);
+  ellipse(345, 200, 48, 58);
+
+  // Flor roja de la derecha
+  fill(204, 46, 24);
+
+  ellipse(410, 245, 55, 65);
+  ellipse(392, 258, 50, 60);
+  ellipse(430, 258, 50, 60);
+
+  fill(222, 56, 27);
+  ellipse(410, 260, 45, 55);
+
+  // Flor roja de la izquierda
+  fill(181, 42, 24);
+
+  ellipse(100, 265, 52, 63);
+  ellipse(82, 278, 48, 58);
+  ellipse(118, 278, 48, 58);
+
+  fill(213, 52, 27);
+  ellipse(100, 278, 43, 52);
+
+  // CENTROS DE LAS FLORES ROJAS
+
+  fill(46, 85, 78);
+
+  ellipse(155, 190, 15, 10);
+  ellipse(250, 175, 15, 10);
+  ellipse(345, 200, 15, 10);
+  ellipse(410, 258, 14, 10);
+  ellipse(100, 278, 14, 10);
+
+  // FLORES DE LA PARTE INFERIOR
+
+  // Flor blanca de abajo
+  fill(235, 233, 208);
+
+  ellipse(220, 405, 34, 53);
+  ellipse(240, 390, 34, 53);
+  ellipse(260, 405, 34, 53);
+  ellipse(240, 420, 34, 53);
+
+  fill(224, 183, 67);
+  ellipse(240, 405, 17, 17);
+
+  // Flor azul de abajo
+  fill(64, 134, 181);
+
+  ellipse(285, 410, 27, 46);
+  ellipse(302, 395, 27, 46);
+  ellipse(319, 410, 27, 46);
+  ellipse(302, 425, 27, 46);
+
+  fill(225, 190, 71);
+  ellipse(302, 410, 12, 12);
+
+  // Otra flor blanca de abajo
+  fill(233, 230, 205);
+
+  ellipse(195, 450, 30, 48);
+  ellipse(212, 437, 30, 48);
+  ellipse(229, 450, 30, 48);
+  ellipse(212, 465, 30, 48);
+
+  fill(225, 184, 68);
+  ellipse(212, 450, 15, 15);
+
+  // Otra flor blanca
+  fill(235, 231, 204);
+
+  ellipse(270, 470, 35, 52);
+  ellipse(290, 455, 35, 52);
+  ellipse(310, 470, 35, 52);
+  ellipse(290, 485, 35, 52);
+
+  fill(220, 180, 68);
+  ellipse(290, 470, 16, 16);
+
+  // FLORES DE LA PARTE MAS BAJA
+
+  // Flor azul de abajo a la izquierda
+  fill(73, 139, 175);
+
+  ellipse(125, 545, 35, 48);
+  ellipse(145, 535, 35, 48);
+  ellipse(165, 545, 35, 48);
+  ellipse(145, 555, 35, 48);
+
+  fill(227, 192, 74);
+  ellipse(145, 545, 15, 15);
+
+  // Flor azul de abajo a la derecha
+  fill(58, 123, 171);
+
+  ellipse(345, 535, 34, 48);
+  ellipse(365, 525, 34, 48);
+  ellipse(385, 535, 34, 48);
+  ellipse(365, 548, 34, 48);
+
+  fill(225, 187, 70);
+  ellipse(365, 535, 15, 15);
+
+  // Ultima flor blanca
+  fill(228, 230, 207);
+
+  ellipse(215, 520, 34, 50);
+  ellipse(235, 505, 34, 50);
+  ellipse(255, 520, 34, 50);
+  ellipse(235, 535, 34, 50);
+
+  fill(220, 180, 71);
+  ellipse(235, 520, 15, 15);
+
+  // Ultima flor azul
+  fill(70, 138, 176);
+
+  ellipse(275, 535, 28, 45);
+  ellipse(293, 522, 28, 45);
+  ellipse(311, 535, 28, 45);
+  ellipse(293, 548, 28, 45);
+
+  fill(223, 186, 70);
+  ellipse(293, 535, 12, 12);
+}
