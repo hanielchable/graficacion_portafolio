@@ -60,3 +60,18 @@ main {
 .btn-enlace:hover {
     opacity: 0.9;
 }
+
+.video-proyecto {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.video-proyecto iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+  border-radius: 12px;
+}
