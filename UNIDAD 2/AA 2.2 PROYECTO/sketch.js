@@ -1,4 +1,3 @@
-
 let velasEncendidas = true;
 
 // Imágenes del proyecto
@@ -10,7 +9,7 @@ let fcp;
 
 // Carga las imágenes antes de iniciar
 function preload() {
-  fotoEinstein = loadImage("assets/fotoEinstein.png");
+  fotoEinstein = loadImage("assets/fotoEinstein.png");''
   fotoCurie = loadImage("assets/fotoCurie.png");
   isc = loadImage("assets/isc.png");
   tecnm = loadImage("assets/tecnm.png");
